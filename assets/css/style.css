@@ -26,6 +26,12 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   font-family: "Raleway", sans-serif;
 }
 
+/* Apply styles to the image */
+.centered-image {
+ /* Ensure the image doesn't exceed the container height */
+  justify-self: center;
+}
+
 .section {
   padding: 7rem 0;
 }
@@ -72,6 +78,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   position: relative;
   overflow: hidden;
 }
+
 .item .item-wrap:after {
   z-index: 2;
   position: absolute;
@@ -167,6 +174,15 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   transition: 0.2s all ease;
   font-weight: 700;
 }
+
+.cv {
+  padding-top: 5px;
+}
+
+.mb-3-about {
+  padding-top: 5px;
+}
+
 .readmore:active, .readmore:focus, .readmore:hover {
   outline: none;
 }
@@ -175,6 +191,14 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   text-decoration: none;
   background: #000;
 }
+
+#dynamic-text {
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  height: 2em; /* Set a fixed height to reserve space */
+  overflow: hidden; /* Hide overflowing content */
+}
+
 
 .testimonials-slider .swiper-pagination {
   margin-top: -60px;
@@ -240,6 +264,59 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 .services h4 {
   padding-top: 10px;
+}
+
+.services {
+  padding-top: 0;
+}
+
+.site-portfolio {
+  padding-bottom: 0;
+}
+
+a.intro {
+  background-color: rgb(0, 0, 0);
+  color: white; /* Set the text color of the hyperlink to white */
+  text-decoration: none; /* Remove the default underline style for the hyperlink */
+}
+a.intro_link {
+  background-color: rgb(0, 0, 0);
+  color: white; /* Set the text color of the hyperlink to white */
+  text-decoration: none; /* Remove the default underline style for the hyperlink */
+}
+h2.intro {
+  background-color: rgb(0, 0, 0);
+  color: white; /* Set the text color of the hyperlink to white */
+}
+a.intro_link:hover {
+  text-decoration: underline; /* Add underline on hover for the hyperlink */
+}
+
+/* Apply a max-width to the container to prevent the video from exceeding the screen width */
+.video-container {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Style the video to be 100% width, auto height, and centered */
+.video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.img-containr {
+  padding-left:0;
+}
+.mb-5 -about {
+  padding-bottom: 0;
+}
+
+/* Add a media query to adjust styles for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+  .video-container {
+    padding: 0 10px; /* Add some padding to the container for better mobile display */
+  }
 }
 
 /* Contact Form */
